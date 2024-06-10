@@ -1,0 +1,6 @@
+@Assembly.Microservice.TrackItAll_HostAddress = http://localhost:5140
+
+GET {{Assembly.Microservice.TrackItAll_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

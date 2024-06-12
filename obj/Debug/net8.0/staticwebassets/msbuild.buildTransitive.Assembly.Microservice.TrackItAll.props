@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Assembly.Microservice.TrackItAll.props" />
-</Project>

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\jmgar\\Documents\\Developers Assemble\\Assembly.Microservice.TrackItAll\\Assembly.Microservice.TrackItAll.csproj": {}
+    "/home/ihtt/Documents/track-it-all-api/track-it-all-api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\jmgar\\Documents\\Developers Assemble\\Assembly.Microservice.TrackItAll\\Assembly.Microservice.TrackItAll.csproj": {
+    "/home/ihtt/Documents/track-it-all-api/track-it-all-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\jmgar\\Documents\\Developers Assemble\\Assembly.Microservice.TrackItAll\\Assembly.Microservice.TrackItAll.csproj",
-        "projectName": "Assembly.Microservice.TrackItAll",
-        "projectPath": "c:\\Users\\jmgar\\Documents\\Developers Assemble\\Assembly.Microservice.TrackItAll\\Assembly.Microservice.TrackItAll.csproj",
-        "packagesPath": "C:\\Users\\jmgar\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\jmgar\\Documents\\Developers Assemble\\Assembly.Microservice.TrackItAll\\obj\\",
+        "projectUniqueName": "/home/ihtt/Documents/track-it-all-api/track-it-all-api.csproj",
+        "projectName": "track-it-all-api",
+        "projectPath": "/home/ihtt/Documents/track-it-all-api/track-it-all-api.csproj",
+        "packagesPath": "/home/ihtt/.nuget/packages/",
+        "outputPath": "/home/ihtt/Documents/track-it-all-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jmgar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/ihtt/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -43,6 +43,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -67,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

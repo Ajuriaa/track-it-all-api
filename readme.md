@@ -32,15 +32,17 @@ TrackItAll API is a .NET-based API for inventory management and tracking. This g
     CREATE ROLE userName WITH SUPERUSER LOGIN PASSWORD 'userPassword';
     ```
 
+	> **Note**: Change userName and userPassword.
+
 ## Setting Up the Database
 
 2. **Add the Environment Variables**:
     In your project directory, copy the `env.template` file and rename it to `.env` and change the variables
-
-		```sh
+	
+ 	```sh
 		DB_USERNAME=YOUR_POSTGRE_USERNAME
 		DB_PASSWORD=YOUR_POSTGRE_PASSWORD
-		```
+	```
 
 
 2. **Run .NET Migrations**:

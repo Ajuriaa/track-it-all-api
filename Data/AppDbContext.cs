@@ -1,11 +1,8 @@
-// Data/AppDbContext.cs
 using Microsoft.EntityFrameworkCore;
 using TrackItAllApi.Models;
 
 namespace TrackItAllApi.Data {
-	public class AppDbContext : DbContext {
-		public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
-
+	public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options) {
 		public DbSet<Entry> Entries { get; set; }
 		public DbSet<Group> Groups { get; set; }
 		public DbSet<Product> Products { get; set; }

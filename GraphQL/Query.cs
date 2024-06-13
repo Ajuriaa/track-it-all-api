@@ -1,83 +1,63 @@
-using HotChocolate;
-using HotChocolate.Data;
 using TrackItAllApi.Data;
 using TrackItAllApi.Models;
-using System.Linq;
+using HotChocolate.Data;
 
-namespace TrackItAllApi.GraphQL
-{
-    public class Query
-    {
-        [UseDbContext(typeof(AppDbContext))]
-        [UseProjection]
-        [UseFiltering]
-        [UseSorting]
-        public IQueryable<Entry> GetEntries([ScopedService] AppDbContext context)
-        {
-            return context.Entries;
-        }
+namespace TrackItAllApi.GraphQL {
+	public class Query {
+		[UseProjection]
+		[UseFiltering]
+		[UseSorting]
+		public IQueryable<Entry> GetEntries([Service] AppDbContext context) {
+			return context.Entries;
+		}
 
-        [UseDbContext(typeof(AppDbContext))]
-        [UseProjection]
-        [UseFiltering]
-        [UseSorting]
-        public IQueryable<Group> GetGroups([ScopedService] AppDbContext context)
-        {
-            return context.Groups;
-        }
+		[UseProjection]
+		[UseFiltering]
+		[UseSorting]
+		public IQueryable<Group> GetGroups([Service] AppDbContext context) {
+			return context.Groups;
+		}
 
-        [UseDbContext(typeof(AppDbContext))]
-        [UseProjection]
-        [UseFiltering]
-        [UseSorting]
-        public IQueryable<Product> GetProducts([ScopedService] AppDbContext context)
-        {
-            return context.Products;
-        }
+		[UseProjection]
+		[UseFiltering]
+		[UseSorting]
+		public IQueryable<Product> GetProducts([Service] AppDbContext context) {
+			return context.Products;
+		}
 
-        [UseDbContext(typeof(AppDbContext))]
-        [UseProjection]
-        [UseFiltering]
-        [UseSorting]
-        public IQueryable<Supplier> GetSuppliers([ScopedService] AppDbContext context)
-        {
-            return context.Suppliers;
-        }
+		[UseProjection]
+		[UseFiltering]
+		[UseSorting]
+		public IQueryable<Supplier> GetSuppliers([Service] AppDbContext context) {
+			return context.Suppliers;
+		}
 
-        [UseDbContext(typeof(AppDbContext))]
-        [UseProjection]
-        [UseFiltering]
-        [UseSorting]
-        public IQueryable<Output> GetOutputs([ScopedService] AppDbContext context)
-        {
-            return context.Outputs;
-        }
+		[UseProjection]
+		[UseFiltering]
+		[UseSorting]
+		public IQueryable<Output> GetOutputs([Service] AppDbContext context) {
+			return context.Outputs;
+		}
 
-        [UseDbContext(typeof(AppDbContext))]
-        [UseProjection]
-        [UseFiltering]
-        [UseSorting]
-        public IQueryable<Batch> GetBatches([ScopedService] AppDbContext context)
-        {
-            return context.Batches;
-        }
+		[UseProjection]
+		[UseFiltering]
+		[UseSorting]
+		public IQueryable<Batch> GetBatches([Service] AppDbContext context) {
+			return context.Batches;
+		}
 
-        [UseDbContext(typeof(AppDbContext))]
-        [UseProjection]
-        [UseFiltering]
-        [UseSorting]
-        public IQueryable<ProductEntry> GetProductEntries([ScopedService] AppDbContext context)
-        {
-            return context.ProductEntries;
-        }
+		[UseProjection]
+		[UseFiltering]
+		[UseSorting]
+		public IQueryable<ProductEntry> GetProductEntries([Service] AppDbContext context) {
+			return context.ProductEntries;
+		}
 
-        [UseDbContext(typeof(AppDbContext))]
-        [UseProjection]
-        [UseFiltering]
-        [UseSorting]
-        public IQueryable<User> GetUsers([ScopedService] AppDbContext context)
-        {
-            return context.Users;
-        }
-    }
+		[UseProjection]
+		[UseFiltering]
+		[UseSorting]
+		public IQueryable<User> GetUsers([Service] AppDbContext context) {
+			return context.Users;
+		}
+	}
 }
